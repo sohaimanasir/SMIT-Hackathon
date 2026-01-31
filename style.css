@@ -4,11 +4,31 @@
 }
 
 body {
-    margin: 0;
-    /* Dark purple to black gradient background for entire page */
-    background: linear-gradient(180deg, #1a0d1f 0%, #0d0511 50%, #000000 100%);
-    min-height: 100vh;
+
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(62, 0, 93, 0.35),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(99, 1, 71, 0.25),
+      transparent 45%
+    ),
+    linear-gradient(
+      180deg,
+      #25001f,
+      #0e0b1f,
+      #120a2a
+    );
+
+  
+  color: #fff;
 }
+
+
 
 .gradient-text {
     background: linear-gradient(90deg, #A734BD 0%, #FF006A 100%);
@@ -45,35 +65,36 @@ background: linear-gradient(90deg, rgba(135, 27, 74, 1) 12%, rgba(184, 70, 178, 
     }
 }
 
-.user-data {
-    background-color: rgba(26, 13, 31, 0.3);
+.user-data , .down-info-cards , .brand-logos {
+    background-color: transparent;
     border-radius: 20px;
     backdrop-filter: blur(30px);
     border: 1px solid rgba(184, 70, 178, 0.2);
 }
 
-.down-info-cards,
+/* .down-info-cards,
 .brand-logos {
     background-color: rgba(26, 13, 31, 0.4) !important;
     backdrop-filter: blur(10px);
-}
+} */
 
 footer {
-    background-color: rgba(26, 13, 31, 0.8);
+    /* background-color: rgba(26, 13, 31, 0.8); */
     backdrop-filter: blur(10px);
 }
 
 /* Custom Accordion Styles */
 .custom-accordion {
     border-radius: 1.5rem;
-    border: 2px solid rgba(167, 52, 189, 0.3);
+    /* border: 2px solid rgba(167, 52, 189, 0.3); */
     /* box-shadow: 0 5px 15px rgba(167, 52, 189, 0.2); */
     overflow: hidden;
     /* background-color: #1a0d1f; */
 }
 
 .custom-accordion .accordion-button {
-    background-color: #1a0d1f;
+    background-color: #2a2a2a;
+    
     color: #fff;
     font-weight: 500;
     padding: 1rem 1.5rem;
