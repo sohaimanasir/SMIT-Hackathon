@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    background-color: black;
+
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #A734BD 0%, #FF006A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-image {
+    max-width: 420px;
+}
+
+.store-btn {
+    max-width: 180px;
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+    .hero-image {
+        max-width: 300px;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .store-btn {
+        max-width: 160px;
+    }
+}
+
+.user-data {
+    background-color: rgba(0, 0, 0, 0.189);
+    border-radius: 20px;
+}
+
+.down-info-cards{
+    background-color: rgba(0, 0, 0, 0.189) !important;
+
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.211);
+}

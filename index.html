@@ -6,77 +6,320 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Down</title>
 
-    <!-- BOOTSTRAP CSS LINK -->
+    <!-- BOOTSTRAP CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <!-- BOOTSRAP ICON CDN  -->
+    <!-- BOOTSTRAP ICONS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
 
     <!-- CUSTOM CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+    <main>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black position-sticky top-0 z-1">
+            <div class="container-xxl">
+                <img src="assets/Logo.png" alt="Down Logo" class="navbar-brand img-fluid" style="max-width: 100px;">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Faq</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Dating Advice</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">DOWN Wiiki</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Careers</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Contact Us</a>
-                        </li>
-
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex gap-4">
+                        <li class="nav-item"><a class="nav-link active text-white" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="faq.html" target="_blank">Faq</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">Dating Advice</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">DOWN Wiki</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="#">Careers</a></li>
+                        <li class="nav-item"><a class="nav-link text-white" href="contact-us.html"
+                                target="_blank">Contact Us</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
 
+        <!-- HERO SECTION -->
+        <section class="hero-section py-5">
+            <div class="container-xxl">
+                <div class="row align-items-center g-4">
+
+                    <!-- Hero Image LEFT on desktop -->
+                    <div class="col-lg-6 text-center order-1">
+                        <img src="assets/iPhone-12-Pro.png" alt="App Preview" class="img-fluid hero-image mx-auto">
+                    </div>
+
+                    <!-- Text RIGHT on desktop -->
+                    <div class="col-lg-6 text-black px-lg-5 text-center text-lg-start order-2">
+                        <h1 class="fw-semibold mb-3 gradient-text">Date On <br> Easy Mode</h1>
+                        <p class="mb-4 text-white">
+                            The honest dating app that puts YOU in control! We encourage users to be honest to form a
+                            real, trustworthy, and transparent connection.
+                        </p>
+                        <div
+                            class="download-btns d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+                            <img src="assets/apple-btn.png" alt="Apple Store" class="store-btn img-fluid">
+                            <img src="assets/playstore-btn.png" alt="Play Store" class="store-btn img-fluid">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- USER DATA -->
+                <div class="user-data mt-5 p-4 p-md-5 text-center text-white bg-dark rounded-3">
+                    <div class="row gy-4">
+                        <div class="col-md-4">
+                            <h2 class="gradient-text">10,000,000</h2>
+                            <p class="mb-0">Users</p>
+                            <p>Worldwide</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h2 class="gradient-text">13,000</h2>
+                            <p class="mb-0">Dates and</p>
+                            <p>Hooks up everyday</p>
+                        </div>
+                        <div class="col-md-4">
+                            <h2 class="gradient-text">10,000,000</h2>
+                            <p class="mb-0">Users</p>
+                            <p>Worldwide</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======== DOWN INFO SECTION =========== -->
+
+        <div class="down-info mt-5 container-xxl">
+            <h1 class="text-center gradient-text mb-5">What DOWN is All About</h1>
+
+            <div class="row g-0 border rounded-4 down-info-cards mt-4"> <!-- g-0 removes gaps between columns -->
+
+                <div class="col-lg-3 col-md-6 border-end p-4">
+                    <img src="assets/lock.png" alt="" class="mb-3" style="width:50px;">
+                    <h3 class="text-white mb-2">Private</h3>
+                    <p class="text-white small">Your safety is important to us. We make sure your DOWN App experience is
+                        secure and honest.</p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 p-4 border-end">
+                    <img src="assets/gender.png" alt="" class="mb-3" style="width:50px;">
+                    <h3 class="text-white mb-2">Authentic</h3>
+                    <p class="text-white small">Your safety is important to us. We make sure your DOWN App experience is
+                        secure and honest.</p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 p-4 border-end">
+                    <img src="assets/pink-heart.png" alt="" class="mb-3" style="width:50px;">
+                    <h3 class="text-white mb-2">Transparent</h3>
+                    <p class="text-white small">Your safety is important to us. We make sure your DOWN App experience is
+                        secure and honest.</p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 p-4">
+                    <img src="assets/green-globe.png" alt="" class="mb-3" style="width:50px;">
+                    <h3 class="text-white mb-2">Global</h3>
+                    <p class="text-white small">Your safety is important to us. We make sure your DOWN App experience is
+                        secure and honest.</p>
+                </div>
+
+            </div>
+        </div>
+        </section>
+
+        <!-- ============== WHAT YOU NEED TO GO DOWN =============== -->
+
+        <section class="container-xxl mt-5">
+            <!-- Section Title -->
+            <h1 class="text-center fs-1 fw-semibold gradient-text mb-5">Why you need to Get Down</h1>
+
+            <!-- Feature 1: Image Left, Text Right -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 col-12 text-center mb-4 mb-lg-0">
+                    <img src="assets/Frame 38 (1).png" alt="Mobile App" class="img-fluid w-100"
+                        style="max-width: 400px;">
+                </div>
+                <div class="col-lg-6 col-12 text-white text-center text-lg-start">
+                    <h2 class="mb-3 fs-3">Honest and Time Saving</h2>
+                    <p class="mb-0">
+                        With DOWN Dating, you don’t need to wonder if your dating app matches are just trying to hook up
+                        or go on a date — we have it all solved for you!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 2: Text Left, Image Right -->
+            <div class="row align-items-center mb-5 flex-lg-row-reverse">
+                <div class="col-lg-6 col-12 text-center mb-4 mb-lg-0">
+                    <img src="assets/Frame 38.png" alt="Mobile App" class="img-fluid w-100" style="max-width: 400px;">
+                </div>
+                <div class="col-lg-6 col-12 text-white text-center text-lg-start">
+                    <h2 class="mb-3 fs-3">Chat Around the World</h2>
+                    <p class="mb-0">
+                        With DOWN Dating, you don’t need to wonder if your dating app matches are just trying to hook up
+                        or go on a date — we have it all solved for you!
+                    </p>
+                </div>
+            </div>
+
+            <!-- Feature 3: Image Left, Text Right -->
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6 col-12 text-center mb-4 mb-lg-0">
+                    <img src="assets/Frame 39.png" alt="Mobile App" class="img-fluid w-100" style="max-width: 400px;">
+                </div>
+                <div class="col-lg-6 col-12 text-white text-center text-lg-start">
+                    <h2 class="mb-3 fs-3">Incredible Chat Experience</h2>
+                    <p class="mb-0">
+                        With DOWN Dating, you don’t need to wonder if your dating app matches are just trying to hook up
+                        or go on a date — we have it all solved for you!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- =========== What down uses see ============= -->
+
+        <section class="real-down-users container-xxl my-5">
+            <div class="row align-items-center text-lg-start">
+
+                <!-- Text -->
+                <div class="col-lg-6 col-12">
+                    <h1 class="fs-1 fw-semibold gradient-text">
+                        What Real <br> DOWN Users <br> Say About <br> The App
+                    </h1>
+                </div>
+
+                <!-- Image -->
+                <div class="col-lg-6 col-12 mb-4 mb-lg-0 text-center">
+                    <img src="assets/Frame 79.png" alt="DOWN Users" class="img-fluid w-100" style="max-width: 450px;">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ========== DOWN APP ============== -->
+
+        <section class="down-app mt-5 container-xxl">
+            <h1 class="text-center gradient-text mt-5">What Are You Waiting For? <br> Get Down With Us @DownApp</h1>
+
+            <div class="download-btns d-flex flex-wrap justify-content-center mt-4 gap-3">
+                <img src="assets/apple-btn.png" alt="Apple Store" class="store-btn img-fluid">
+                <img src="assets/playstore-btn.png" alt="Play Store" class="store-btn img-fluid">
+            </div>
+        </section>
+
+        <!-- ========= PRESS ======== -->
+
+      <section class="press container-xxl my-5 text-center">
+    <!-- Header with small lines -->
+    <div class="d-flex align-items-center justify-content-center mb-4 flex-wrap">
+        <div class="border-top my-1" style="width:40px; height:1px;"></div>
+        <h1 class="gradient-text mx-3 mb-0">Press</h1>
+        <div class="border-top my-1" style="width:40px; height:1px;"></div>
+    </div>
+
+    <!-- Brand logos -->
+    <div class="row justify-content-center align-items-center g-3">
+        <div class="col-4 col-sm-3 col-md-2 text-center">
+            <img src="assets/mashable.png" alt="Mashable" class="img-fluid">
+        </div>
+        <div class="col-4 col-sm-3 col-md-2 text-center">
+            <img src="assets/buzzfeed.png" alt="BuzzFeed" class="img-fluid">
+        </div>
+        <div class="col-4 col-sm-3 col-md-2 text-center">
+            <img src="assets/fastcompany.png" alt="Fast Company" class="img-fluid">
+        </div>
+        <div class="col-4 col-sm-3 col-md-2 text-center">
+            <img src="assets/versus.png" alt="Versus" class="img-fluid">
+        </div>
+        <div class="col-4 col-sm-3 col-md-2 text-center">
+            <img src="assets/pando.png" alt="Pando" class="img-fluid">
+        </div>
+        <div class="col-4 col-sm-3 col-md-2 text-center">
+            <img src="assets/techcrunh.png" alt="TechCrunch" class="img-fluid">
+        </div>
+        <div class="col-4 col-sm-3 col-md-2 text-center">
+            <img src="assets/datingnews.png" alt="Dating News" class="img-fluid">
+        </div>
+        <div class="col-4 col-sm-3 col-md-2 text-center">
+            <img src="assets/dating-p.png" alt="Dating iP" class="img-fluid">
+        </div>
+        <div class="col-4 col-sm-3 col-md-2 text-center">
+            <!-- empty or future logo -->
+        </div>
+    </div>
+
+    <!-- Optional small description below logos -->
+    <p class="text-muted mt-3 small">
+        Want to read more DOWN Dating App reviews? More press for the curious.
+    </p>
+</section>
 
 
 
 
 
 
+        <!-- FOOTER -->
+        <footer class="bg-black text-white py-5">
+            <div class="container-xxl">
+                <div class="row gy-4 align-items-start text-center text-md-start">
 
+                    <!-- Brand -->
+                    <div class="col-lg-5 col-md-6">
+                        <h2 class="fw-bold mb-3">DOWN</h2>
+                        <p class="text-secondary mb-1">The honest dating app that puts YOU in control.</p>
+                        <p class="text-secondary mb-3">No annoying users to be honest to form a real, trustworthy, and
+                            transparent connection.</p>
+                        <p class="text-secondary small mb-0">© 2022 Down. All Rights Reserved</p>
+                    </div>
 
+                    <!-- Navigation -->
+                    <div class="col-lg-4 col-md-6">
+                        <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                            <li><a href="#home" class="text-secondary text-decoration-none">Home</a></li>
+                            <li><a href="#faq" class="text-secondary text-decoration-none">FAQ</a></li>
+                            <li><a href="#dating-advice" class="text-secondary text-decoration-none">Dating Advice</a>
+                            </li>
+                            <li><a href="#wiki" class="text-secondary text-decoration-none">DOWN Wiki</a></li>
+                            <li><a href="#careers" class="text-secondary text-decoration-none">Careers</a></li>
+                            <li><a href="#contact" class="text-secondary text-decoration-none">Contact Us</a></li>
+                        </ul>
+                    </div>
 
+                    <!-- Social & Legal -->
+                    <div class="col-lg-3">
+                        <div class="d-flex flex-column gap-3 align-items-center align-items-lg-start">
+                            <!-- Social -->
+                            <div class="d-flex gap-3">
+                                <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="text-white fs-5"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-white fs-5"><i class="bi bi-medium"></i></a>
+                                <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                            <!-- Legal -->
+                            <div class="d-flex flex-column gap-1">
+                                <a href="#privacy" class="text-secondary text-decoration-none">Privacy & Policy</a>
+                                <a href="#terms" class="text-secondary text-decoration-none">Terms</a>
+                            </div>
+                        </div>
+                    </div>
 
-
+                </div>
+            </div>
+        </footer>
     </main>
 
-
-    <!-- BOOTSTRAP JS LINK -->
+    <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
