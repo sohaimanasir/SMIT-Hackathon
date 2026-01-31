@@ -39,7 +39,7 @@ body {
     border-radius: 20px;
 }
 
-.down-info-cards{
+.down-info-cards , .brand-logos{
     background-color: rgba(0, 0, 0, 0.189) !important;
 
 }
