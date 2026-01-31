@@ -28,7 +28,9 @@ body {
   color: #fff;
 }
 
-
+.navbar-toggler{
+    filter: invert(1);
+}
 
 .gradient-text {
     background: linear-gradient(90deg, #A734BD 0%, #FF006A 100%);
@@ -208,11 +210,15 @@ footer {
 /* Responsive adjustments */
 @media (max-width: 992px) {
     .contact-us-section {
-        text-align: center;
         padding: 2rem 1rem;
     }
 
     .contact-us-section img {
         margin-top: 2rem;
+    }
+
+        .contact-us-section h2,
+    .contact-us-section img {
+        text-align: center;
     }
 }
