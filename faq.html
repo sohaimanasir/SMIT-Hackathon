@@ -33,7 +33,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex gap-5">
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="index.html" target="_blank">Home</a>
+                            <a class="nav-link active text-white" aria-current="page" href="index.html"
+                                target="_blank">Home</a>
                         </li>
 
                         <li class="nav-item">
@@ -53,66 +54,301 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active text-white" aria-current="page" href="contact-us.html" target="_blank">Contact Us</a>
+                            <a class="nav-link active text-white" aria-current="page" href="contact-us.html"
+                                target="_blank">Contact Us</a>
                         </li>
 
                 </div>
             </div>
         </nav>
 
+        <!-- ============= FAQ HERO ============ -->
+
+       <section class="faq-hero container-xxl my-5">
+    <div class="row align-items-center g-4">
+        <!-- Image Column -->
+        <div class="col-lg-6 col-md-12 text-center text-lg-start">
+            <img src="assets/faq-hero.png" alt="FAQ Hero" class="img-fluid">
+        </div>
+
+        <!-- Text Column -->
+        <div class="col-lg-6 col-md-12 text-center text-lg-start">
+            <h1 class="gradient-text display-4 fw-bold">Frequently <br> Asked Questions</h1>
+            <p class="text-white fs-5">Non donec molestie purus pulvinar sollicitudin habitasse et diam at mi tristique.</p>
+        </div>
+    </div>
+</section>
 
 
 
+<!-- ================ ACCORDIAN =========== -->
+        <section class="container my-5">
+            <div class="accordion" id="accordionExample">
 
-
-
-          <!-- FOOTER -->
-    <footer class="bg-black text-white py-5">
-        <div class="container">
-            <div class="row gy-4 align-items-start text-center text-md-start">
-
-                <!-- Brand -->
-                <div class="col-lg-5 col-md-6">
-                    <h2 class="fw-bold mb-3">DOWN</h2>
-                    <p class="text-secondary mb-1">The honest dating app that puts YOU in control.</p>
-                    <p class="text-secondary mb-3">No annoying users to be honest to form a real, trustworthy, and transparent connection.</p>
-                    <p class="text-secondary small mb-0">© 2022 Down. All Rights Reserved</p>
-                </div>
-
-                <!-- Navigation -->
-                <div class="col-lg-4 col-md-6">
-                    <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
-                        <li><a href="#home" class="text-secondary text-decoration-none">Home</a></li>
-                        <li><a href="#faq" class="text-secondary text-decoration-none">FAQ</a></li>
-                        <li><a href="#dating-advice" class="text-secondary text-decoration-none">Dating Advice</a></li>
-                        <li><a href="#wiki" class="text-secondary text-decoration-none">DOWN Wiki</a></li>
-                        <li><a href="#careers" class="text-secondary text-decoration-none">Careers</a></li>
-                        <li><a href="#contact" class="text-secondary text-decoration-none">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <!-- Social & Legal -->
-                <div class="col-lg-3">
-                    <div class="d-flex flex-column gap-3 align-items-center align-items-lg-start">
-                        <!-- Social -->
-                        <div class="d-flex gap-3">
-                            <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
-                            <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
-                            <a href="#" class="text-white fs-5"><i class="bi bi-twitter"></i></a>
-                            <a href="#" class="text-white fs-5"><i class="bi bi-medium"></i></a>
-                            <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
-                        </div>
-                        <!-- Legal -->
-                        <div class="d-flex flex-column gap-1">
-                            <a href="#privacy" class="text-secondary text-decoration-none">Privacy & Policy</a>
-                            <a href="#terms" class="text-secondary text-decoration-none">Terms</a>
+                <!-- Loop for 15 items -->
+                <!-- Just increment IDs and content -->
+                <div class="accordion-item custom-accordion my-3">
+                    <h2 class="accordion-header" id="heading1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                            01 <span class="fs-5 ms-2">Consultation</span>
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Content for item 1 goes here.
                         </div>
                     </div>
                 </div>
 
+                <div class="accordion-item custom-accordion my-3">
+                    <h2 class="accordion-header" id="heading2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            02 <span class="fs-5 ms-2">Planning</span>
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Content for item 2 goes here.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item custom-accordion my-3">
+                    <h2 class="accordion-header" id="heading3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            03 <span class="fs-5 ms-2">Strategy</span>
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Content for item 3 goes here.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item custom-accordion my-3">
+                    <h2 class="accordion-header" id="heading4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            04 <span class="fs-5 ms-2">Execution</span>
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Content for item 4 goes here.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item custom-accordion my-3">
+                    <h2 class="accordion-header" id="heading5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                            05 <span class="fs-5 ms-2">Review</span>
+                        </button>
+                    </h2>
+                    <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Content for item 5 goes here.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Items 6–15 -->
+                <div class="accordion-item custom-accordion my-3">
+                    <h2 class="accordion-header" id="heading6">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                            06 <span class="fs-5 ms-2">Analysis</span>
+                        </button>
+                    </h2>
+                    <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">Content for item 6 goes here.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item custom-accordion my-3">
+                    <h2 class="accordion-header" id="heading7">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                            07 <span class="fs-5 ms-2">Design</span>
+                        </button>
+                    </h2>
+                    <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">Content for item 7 goes here.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item custom-accordion my-3">
+                    <h2 class="accordion-header" id="heading8">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                            08 <span class="fs-5 ms-2">Implementation</span>
+                        </button>
+                    </h2>
+                    <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">Content for item 8 goes here.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item custom-accordion my-3">
+                    <h2 class="accordion-header" id="heading9">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                            09 <span class="fs-5 ms-2">Testing</span>
+                        </button>
+                    </h2>
+                    <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">Content for item 9 goes here.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item custom-accordion my-3">
+                    <h2 class="accordion-header" id="heading10">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                            10 <span class="fs-5 ms-2">Deployment</span>
+                        </button>
+                    </h2>
+                    <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">Content for item 10 goes here.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item custom-accordion my-3">
+                    <h2 class="accordion-header" id="heading11">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                            11 <span class="fs-5 ms-2">Maintenance</span>
+                        </button>
+                    </h2>
+                    <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">Content for item 11 goes here.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item custom-accordion my-3">
+                    <h2 class="accordion-header" id="heading12">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                            12 <span class="fs-5 ms-2">Optimization</span>
+                        </button>
+                    </h2>
+                    <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">Content for item 12 goes here.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item custom-accordion my-3">
+                    <h2 class="accordion-header" id="heading13">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                            13 <span class="fs-5 ms-2">Reporting</span>
+                        </button>
+                    </h2>
+                    <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">Content for item 13 goes here.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item custom-accordion my-3">
+                    <h2 class="accordion-header" id="heading14">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                            14 <span class="fs-5 ms-2">Evaluation</span>
+                        </button>
+                    </h2>
+                    <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">Content for item 14 goes here.</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item custom-accordion my-3">
+                    <h2 class="accordion-header" id="heading15">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                            15 <span class="fs-5 ms-2">Closure</span>
+                        </button>
+                    </h2>
+                    <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">Content for item 15 goes here.</div>
+                    </div>
+                </div>
+
             </div>
-        </div>
-    </footer>
+        </section>
+
+
+
+
+
+
+        <!-- FOOTER -->
+        <footer class="bg-black text-white py-5">
+            <div class="container">
+                <div class="row gy-4 align-items-start text-center text-md-start">
+
+                    <!-- Brand -->
+                    <div class="col-lg-5 col-md-6">
+                        <img src="assets/Logo.png" alt="" class="img-fluid mb-2">                        <p class="text-secondary mb-1">The honest dating app that puts YOU in control.</p>
+                        <p class="text-secondary mb-3">No annoying users to be honest to form a real, trustworthy, and
+                            transparent connection.</p>
+                        <p class="text-secondary small mb-0">© 2022 Down. All Rights Reserved</p>
+                    </div>
+
+                    <!-- Navigation -->
+                    <div class="col-lg-4 col-md-6">
+                        <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+                            <li><a href="#home" class="text-secondary text-decoration-none">Home</a></li>
+                            <li><a href="#faq" class="text-secondary text-decoration-none">FAQ</a></li>
+                            <li><a href="#dating-advice" class="text-secondary text-decoration-none">Dating Advice</a>
+                            </li>
+                            <li><a href="#wiki" class="text-secondary text-decoration-none">DOWN Wiki</a></li>
+                            <li><a href="#careers" class="text-secondary text-decoration-none">Careers</a></li>
+                            <li><a href="#contact" class="text-secondary text-decoration-none">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Social & Legal -->
+                    <div class="col-lg-3">
+                        <div class="d-flex flex-column gap-3 align-items-center align-items-lg-start">
+                            <!-- Social -->
+                            <div class="d-flex gap-3">
+                                <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+                                <a href="#" class="text-white fs-5"><i class="bi bi-twitter"></i></a>
+                                <a href="#" class="text-white fs-5"><i class="bi bi-medium"></i></a>
+                                <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                            <!-- Legal -->
+                            <div class="d-flex flex-column gap-1">
+                                <a href="#privacy" class="text-secondary text-decoration-none">Privacy & Policy</a>
+                                <a href="#terms" class="text-secondary text-decoration-none">Terms</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
 
 
 
